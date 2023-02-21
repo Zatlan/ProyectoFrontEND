@@ -34,17 +34,27 @@ div#general {
             display: flex;
         }
         .menu p {
+            margin: auto;
             margin-right: 2rem;
             cursor: pointer;
         }
 
         .content {
+            margin: auto;
             margin-top: 2rem;
+        }
+        .content h3 {
+            color: white;
         }
 
         [data-content] {
             display: none;
         }
+        
+        .active[data-content] {
+            display: block;
+        }
+
 
 
  h1{
@@ -66,12 +76,9 @@ nav h2{
 p{
     color: white;
     width: 100%;
-    list-style: none;
     text-align: justify;
     font-size: 20px;
     border: 1px;
-    border-color: black;
-    border-style: dashed;
     padding: 20px;
 
 }
