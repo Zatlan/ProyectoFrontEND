@@ -1,13 +1,58 @@
-#{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+div#general {
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width:auto;    
+    height: 500px;
+    background-color: #222;
 }
 
-h1{
+    div#izquierda  {
+        float: left;
+        width: 30%;
+        border-right: solid blue;
+   
+       
+    }
+
+    div#derecha {
+        float:right;
+        width:70%;
+    
+    }
+
+
+        .menu {
+            display: flex;
+        }
+        .menu p {
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 2rem;
+        }
+
+        [data-content] {
+            display: none;
+        }
+
+
+ h1{
     text-align: center;
     background-color: black;
     color: white;
     padding: 20px;
+    width: 100%;
 }
 
 nav h2{
@@ -15,11 +60,11 @@ nav h2{
     padding: 20px;
     text-align: center;
     font-size: 50px;
+    color: white;
 }
 
 p{
-    background-color: white;
-    color: black;
+    color: white;
     width: 100%;
     list-style: none;
     text-align: justify;
@@ -34,14 +79,12 @@ img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    object-position: center;
     object-fit: cover;
+    
 }
 
-section  {
-    width: 500px;
-    border: 15px solid blue;
-    padding: 50px;
-    margin: 20px;
-   
+li {
+    color:white;
+    font-size: 30px;
+    text-align: justify;
 }
