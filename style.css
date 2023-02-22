@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: sans-serif;
   }
+ body {
+    background-color:aqua;
+ } 
 div#contenedor {
     width: 80%;
     max-width: 1000px;
     overflow: hidden;
-    background-color: aqua;
-
+    
 }
 div#general {
     margin: auto;
@@ -25,6 +27,9 @@ div#general {
         width: 100%;
         text-align: center;
         padding: 10px;
+        border-bottom: 5px solid white;
+        
+
          
    
        
@@ -32,7 +37,7 @@ div#general {
 
     div#derecha {
         float:inline-end;
-        width:70%;
+        width:100%;
         padding: 10px;
         
     
@@ -41,15 +46,19 @@ div#general {
 
         .menu {
             display: flex;
-            width: 80%;
+            width: 100%;
+                        
             
         }
         .menu p {
-            margin: auto;
-            margin-right: 2rem;
+            margin:auto;
+            margin-right: 1rem;
             cursor: pointer;
-            object-position: center;
-            width: 100%;
+            text-align: center;
+            border-style: solid;
+            border-color: white;
+            
+
         }
 
         .content {
@@ -58,9 +67,15 @@ div#general {
         }
         .content h3 {
             color: white;
+            margin-left:20% ;
+            margin-right: 20%;
+            
         }
         .content p {
-            width: 100%;
+            width: auto;
+            margin-left:20% ;
+            margin-right: 20%;
+            padding: 10%;
         }
 
         [data-content] {
@@ -103,11 +118,11 @@ img{
 }
 
 li {
-    color:blue;
+    color:white;
     font-size: 30px;
     text-align: justify;
     margin-left: 10%;
-    padding: 20px;
+    padding: 10px;
     align-self: center; 
 
 
@@ -124,4 +139,17 @@ li {
         font-size: 15px;
     } 
     
+}
+
+footer {
+    margin: auto;
+    
+    color: #222;
+    background-color: #222;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
