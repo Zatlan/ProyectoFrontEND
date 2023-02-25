@@ -30,11 +30,9 @@ div#general {
         padding: 10px;
         border-bottom: 5px solid white;
         
-
-         
-   
-       
+    
     }
+
 
     div#derecha {
         float:inline-end;
@@ -54,11 +52,22 @@ div#general {
         .menu p {
             margin:auto;
             margin-right: 1rem;
+            
+            
+            padding: 1em;
             cursor: pointer;
             text-align: center;
+            
             border-style: solid;
             border-color: white;
-            
+
+           
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .menu p:hover {    
+            background-color: grey;
 
         }
 
@@ -68,16 +77,24 @@ div#general {
         }
         .content h3 {
             color: white;
-            margin-left:20% ;
-            margin-right: 20%;
+            margin-left:5% ;
+            margin-right: 5%;
             
         }
         .content p {
             width: auto;
-            margin-left:20% ;
-            margin-right: 20%;
-            padding: 10%;
+            margin-left:5% ;
+            margin-right: 5%;
+            padding: 1%;
         }
+        .content li {
+            width: auto;
+            margin-left:10% ;
+            margin-right: 5%;
+            padding: 1%;
+            font-size: 20px;
+        }
+
 
         [data-content] {
             display: none;
@@ -125,22 +142,82 @@ li {
     margin-left: 10%;
     padding: 10px;
     align-self: center; 
+ 
+}
+
+ul {
+   
+    border-color: white;
+    text-align: center;
 
 
 }
-
-
-@media screen and (max-width:1200px){
+@media screen and (max-width: 1200px) and (min-width: 801px) {
     .menu {
-        display:list-item;
+        display:inline-flex;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+       
+        padding: 1rem;
 
+
+
+    }
+    .menu p{
+        font-size: 13px;
+    }
+
+
+    li {
+        font-size: 20px;
+    } 
+    .content h3 {
+        font-size: 20px;
+        margin-left:5% ;
+        margin-right: 10%;
+    }
+    .content li{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .menu {
+        display:table;
+        width: 20%;
+        text-align: center;
+        margin: auto;
+
+
+    }
+    .menu p{
+        font-size: 15px;
     }
 
     li {
         font-size: 15px;
+        padding: 1px;
     } 
-    
+    .content h3 {
+        font-size: 20px;
+        margin-left:5% ;
+        margin-right: 10%;
+
+    }
+    .content li{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 15px;
+    }
 }
+
+
 
 footer {
     margin: auto;
@@ -153,4 +230,5 @@ footer p {
     text-align: center;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
 }
